@@ -9,16 +9,16 @@ import Loading from '../Layout/Loading';
 
 export default function Books() {
     useFirestoreConnect([
-        { collection: 'books' }
+        { collection: 'products' }
     ]);
-    const books = useSelector(state => state.firestore.ordered.books);
+    const books = useSelector(state => state.firestore.ordered.products);
     const firestore = useFirestore();
 
     if (!books) return <Loading/>;
 
     const deleteBook = id => {
         firestore.delete({
-            collection: 'books',
+            collection: 'products',
             doc: id
         });
     };

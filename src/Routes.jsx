@@ -23,8 +23,9 @@ function Routes() {
       <Navbar/>
       <div className="container">
         <Switch>
-            <Route exact path='/' component={ PublicRoute(Login) }/>
-            <Route exact path='/login' component={ PublicRoute(Login) }/>
+        <Route exact path='/' component={ Books }/>
+            {/* <Route exact path='/' component={ PublicRoute(Login) }/> */}
+            {/* <Route exact path='/login' component={ PublicRoute(Login) }/> */}
             <PrivateRoute>
               <Route exact path='/books' component={ Books }/>
               <Route exact path='/book/new' component={ NewBook }/>

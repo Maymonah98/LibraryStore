@@ -13,23 +13,22 @@ import searchUserReducer from './reducers/searchUserReducer';
 
 // Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAzc79B9rPFdulCvAHueJGlC1AqyzgZ-6g",
-    authDomain: "library-160c7.firebaseapp.com",
-    databaseURL: "https://library-160c7.firebaseio.com",
-    projectId: "library-160c7",
-    storageBucket: "library-160c7.appspot.com",
-    messagingSenderId: "1058592225053",
-    appId: "1:1058592225053:web:824a20e9d76a913320d3f4",
-    measurementId: "G-2B9PNX7P6R"
+    apiKey: "AIzaSyDa2xuvuxGZvxY_z-cnrLvq9Pcb7NPLfxU",
+    authDomain: "x-project-1.firebaseapp.com",
+    databaseURL: "https://x-project-1.firebaseio.com",
+    projectId: "x-project-1",
+    storageBucket: "x-project-1.appspot.com",
+    messagingSenderId: "645546586124",
+    appId: "1:645546586124:web:3c3b4af4eb9f0631513e29"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.firestore();
-firebase.analytics();
+//firebase.analytics();
 
 // React-Redux configuration.
 const rrfConfig = {
-    userProfile: 'users',
+    userProfile: 'products',
     useFirestoreForProfile: true
 };
 
